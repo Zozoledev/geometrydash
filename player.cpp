@@ -21,6 +21,19 @@ void Player::draw(sf::RenderTarget& target, sf::RenderStates states) const {
 }
 
 
+void Player::setPosition(float dx, float dy){
+    sprite.setPosition(dx, dy);
+}
 
+void Player::move(float dx, float dy){
+    sprite.move(dx, dy);
+}
 
+bool Player::isjump(){
+    return Player::jump; 
+}
+
+void Player::changejump(){
+    Player::jump = !(Player::jump);
+}
 
