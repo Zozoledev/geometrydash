@@ -37,3 +37,11 @@ void Player::changejump(){
     Player::jump = !(Player::jump);
 }
 
+float Player::get_coordinate_left(void){
+    Player::bounds = sprite.getGlobalBounds();
+    return Player::bounds.left;
+}
+
+float Player::get_coordinate_bottom(void){
+    
+}

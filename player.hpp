@@ -4,6 +4,7 @@ class Player : public sf::Drawable, public sf::Transformable{
         std::string file_texture = "cube.png";
         sf::Texture texture;
         sf::Sprite sprite;
+        sf::FloatRect bounds; 
         virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const;
 
         bool jump = false;
@@ -28,6 +29,13 @@ class Player : public sf::Drawable, public sf::Transformable{
 
         void changejump(void);
         /*Modifie la valeur de jump*/
+
+
+        float get_coordinate_left(void);
+        /*retourne la coordonnée à gauche*/
+
+        float get_coordinate_bottom(void);
+        /*Retourne la coordonnée en bas là*/
 
         
     
