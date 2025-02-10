@@ -39,6 +39,8 @@ int main(){
         }
 
 
+        std::cout << cube.get_coordinate_bottom() << std::endl;
+
         elapsed1 = clock.getElapsedTime();
         if(cube.isjump() && elapsed1.asSeconds() < 0.3){
             cube.move(0, -5);

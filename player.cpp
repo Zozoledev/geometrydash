@@ -43,5 +43,8 @@ float Player::get_coordinate_left(void){
 }
 
 float Player::get_coordinate_bottom(void){
-    
+    Player::bounds = sprite.getGlobalBounds();
+    return Player::bounds.top + Player::bounds.height;
 }
+
+
