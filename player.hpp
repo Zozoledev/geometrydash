@@ -29,13 +29,19 @@ class Player : public sf::Drawable, public sf::Transformable{
 
         void changejump(void);
         /*Modifie la valeur de jump*/
-
-
+        
         float get_coordinate_left(void);
         /*retourne la coordonnée à gauche*/
 
         float get_coordinate_bottom(void);
         /*Retourne la coordonnée en bas là*/
+
+        float get_coordinate_top(void);
+        /*Retourne les coordonnée en haut*/
+
+        float get_coordinate_right(void);
+        /*retourne les coordonnées à droite*/
+
 
         
     

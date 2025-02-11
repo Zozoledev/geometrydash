@@ -48,3 +48,13 @@ float Player::get_coordinate_bottom(void){
 }
 
 
+float Player::get_coordinate_top(void){
+    Player::bounds = sprite.getGlobalBounds();
+    return Player::bounds.top;
+}
+
+
+float Player::get_coordinate_right(void){
+    Player::bounds = sprite.getGlobalBounds();
+    return Player::bounds.left + Player::bounds.width;
+}
